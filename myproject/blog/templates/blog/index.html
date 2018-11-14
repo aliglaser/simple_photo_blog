@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<table class="table table-hover table-bordered">
+	<tbody>
+		{% for post in posts %}
+		<tr>
+			<td>{{ post.title }}</td>
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>
+	
+{% endblock %}
